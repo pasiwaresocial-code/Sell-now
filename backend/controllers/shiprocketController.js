@@ -130,7 +130,9 @@ const addPickupLocation = async (sellerId) => {
 
         return nickname;
     } catch (error) {
-        console.error('Add Pickup Location Error:', error.message);
+        const errorData = error.response ? error.response.data : error.message;
+        console.error('Add Pickup Location Error Details:', JSON.stringify(errorData));
+        fs.appendFileSync(path.join(__dirname, '..', 'logs', 'debug_shiprocket.txt'), `\n[PICKUP ERROR]: ${JSON.stringify(errorData)}\n`);
         throw error;
     }
 };

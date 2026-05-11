@@ -54,9 +54,7 @@ export default function Categories() {
 
         try {
             // Note: Endpoint expects 'images' key and returns array of URLs
-            const { data } = await api.post('/upload/multiple', formData, {
-                headers: { 'Content-Type': 'multipart/form-data' }
-            });
+            const { data } = await api.post('/upload/multiple', formData);
             // data is array of urls
             if (type === 'category') setCategoryImage(data[0]);
             else setSubCategoryImage(data[0]);
