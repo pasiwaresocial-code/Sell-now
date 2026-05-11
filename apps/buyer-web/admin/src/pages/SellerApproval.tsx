@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5500/api';
+const API_URL = import.meta.env.VITE_API_URL || 'https://demobackend.pasiware.cloud/api';
 
 interface Seller {
     _id: string;

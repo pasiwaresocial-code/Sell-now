@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5500/api';
+const API_URL = import.meta.env.VITE_API_URL || 'https://demobackend.pasiware.cloud/api';
 
 
 const api = axios.create({
@@ -35,7 +35,7 @@ export const getImageUrl = (imagePath) => {
         if (relativePath) {
             if (relativePath) {
                 // Use the configured API URL origin or fallback
-                let host = import.meta.env.VITE_API_URL || 'http://localhost:5500';
+                let host = import.meta.env.VITE_API_URL || 'https://demobackend.pasiware.cloud/api';
                 // Remove /api if present to get base URL
                 host = host.replace(/\/api$/, '');
                 return `${host}/uploads/${relativePath}`;
@@ -45,7 +45,7 @@ export const getImageUrl = (imagePath) => {
 
     if (imagePath.startsWith('http')) return imagePath;
 
-    const host = import.meta.env.VITE_API_URL?.replace('/api', '') || 'http://localhost:5500';
+    const host = import.meta.env.VITE_API_URL?.replace('/api', '') || 'https://demobackend.pasiware.cloud';
     // Ensure path starts with /
     const cleanPath = imagePath.startsWith('/') ? imagePath : `/${imagePath}`;
     return `${host}${cleanPath}`;

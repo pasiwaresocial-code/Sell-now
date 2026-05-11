@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5500/api';
+const API_URL = import.meta.env.VITE_API_URL || 'https://demobackend.pasiware.cloud/api';
 
 interface Order {
     _id: string;
@@ -450,7 +450,7 @@ export default function Orders() {
                                     {selectedOrder.items.map((item, index) => (
                                         <div key={index} className="flex gap-4 bg-gray-50 p-4 rounded-lg">
                                             {item.product?.images?.[0] && (
-                                                <img src={`http://localhost:5500/${item.product.images[0]}`} alt={item.title} className="w-20 h-20 object-cover rounded" />
+                                                <img src={`https://demobackend.pasiware.cloud/${item.product.images[0]}`} alt={item.title} className="w-20 h-20 object-cover rounded" />
                                             )}
                                             <div className="flex-1">
                                                 <p className="font-medium">{item.title}</p>

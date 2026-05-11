@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import api from '../utils/api';
 import { ArrowLeft, Package, ShoppingCart, DollarSign, TrendingUp, Calendar, Mail, Phone } from 'lucide-react';
 
-const BASE_URL = 'http://localhost:5500';
+const BASE_URL = 'https://demobackend.pasiware.cloud';
 
 // Helper to format image URLs
 const getImageUrl = (path: string) => {
