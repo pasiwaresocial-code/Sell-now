@@ -1,0 +1,222 @@
+﻿node.exe : Error: 
+Cannot find module 'a
+jv/dist/compile/codeg
+en'
+At C:\Program Files\n
+odejs\npx.ps1:29 
+char:3
++   & $NODE_EXE 
+$NPX_CLI_JS $args
++   ~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (Error:    
+ Cannot f...ompil    
+e/codegen':Strin    
+g) [], RemoteExc    
+eption
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+Require stack:
+- X:\Sell Now\apps\bu
+yer\node_modules\ajv-
+keywords\dist\definit
+ions\typeof.js
+- X:\Sell Now\apps\bu
+yer\node_modules\ajv-
+keywords\dist\keyword
+s\typeof.js
+- X:\Sell Now\apps\bu
+yer\node_modules\ajv-
+keywords\dist\keyword
+s\index.js
+- X:\Sell Now\apps\bu
+yer\node_modules\ajv-
+keywords\dist\index.j
+s
+- X:\Sell Now\apps\bu
+yer\node_modules\sche
+ma-utils\dist\validat
+e.js
+- X:\Sell Now\apps\bu
+yer\node_modules\sche
+ma-utils\dist\index.j
+s
+- X:\Sell Now\apps\bu
+yer\node_modules\expo
+-router\plugin\build\
+index.js
+- X:\Sell Now\apps\bu
+yer\node_modules\expo
+-router\app.plugin.js
+- X:\Sell Now\apps\bu
+yer\node_modules\@exp
+o\config-plugins\buil
+d\utils\plugin-resolv
+er.js
+- X:\Sell Now\apps\bu
+yer\node_modules\@exp
+o\config-plugins\buil
+d\plugins\withStaticP
+lugin.js
+- X:\Sell Now\apps\bu
+yer\node_modules\@exp
+o\config-plugins\buil
+d\plugins\withPlugins
+.js
+- X:\Sell Now\apps\bu
+yer\node_modules\@exp
+o\config-plugins\buil
+d\index.js
+- X:\Sell Now\apps\bu
+yer\node_modules\@exp
+o\config\build\plugin
+s\withConfigPlugins.j
+s
+- X:\Sell Now\apps\bu
+yer\node_modules\@exp
+o\config\build\Config
+.js
+- X:\Sell Now\apps\bu
+yer\node_modules\@exp
+o\config\build\index.
+js
+- X:\Sell Now\apps\bu
+yer\node_modules\@exp
+o\cli\build\src\confi
+g\configAsync.js
+- X:\Sell Now\apps\bu
+yer\node_modules\@exp
+o\cli\build\src\confi
+g\index.js
+- X:\Sell Now\apps\bu
+yer\node_modules\@exp
+o\cli\build\bin\cli
+- X:\Sell Now\apps\bu
+yer\node_modules\expo
+\bin\cli
+Error: Cannot find 
+module 'ajv/dist/comp
+ile/codegen'
+Require stack:
+- X:\Sell Now\apps\bu
+yer\node_modules\ajv-
+keywords\dist\definit
+ions\typeof.js
+- X:\Sell Now\apps\bu
+yer\node_modules\ajv-
+keywords\dist\keyword
+s\typeof.js
+- X:\Sell Now\apps\bu
+yer\node_modules\ajv-
+keywords\dist\keyword
+s\index.js
+- X:\Sell Now\apps\bu
+yer\node_modules\ajv-
+keywords\dist\index.j
+s
+- X:\Sell Now\apps\bu
+yer\node_modules\sche
+ma-utils\dist\validat
+e.js
+- X:\Sell Now\apps\bu
+yer\node_modules\sche
+ma-utils\dist\index.j
+s
+- X:\Sell Now\apps\bu
+yer\node_modules\expo
+-router\plugin\build\
+index.js
+- X:\Sell Now\apps\bu
+yer\node_modules\expo
+-router\app.plugin.js
+- X:\Sell Now\apps\bu
+yer\node_modules\@exp
+o\config-plugins\buil
+d\utils\plugin-resolv
+er.js
+- X:\Sell Now\apps\bu
+yer\node_modules\@exp
+o\config-plugins\buil
+d\plugins\withStaticP
+lugin.js
+- X:\Sell Now\apps\bu
+yer\node_modules\@exp
+o\config-plugins\buil
+d\plugins\withPlugins
+.js
+- X:\Sell Now\apps\bu
+yer\node_modules\@exp
+o\config-plugins\buil
+d\index.js
+- X:\Sell Now\apps\bu
+yer\node_modules\@exp
+o\config\build\plugin
+s\withConfigPlugins.j
+s
+- X:\Sell Now\apps\bu
+yer\node_modules\@exp
+o\config\build\Config
+.js
+- X:\Sell Now\apps\bu
+yer\node_modules\@exp
+o\config\build\index.
+js
+- X:\Sell Now\apps\bu
+yer\node_modules\@exp
+o\cli\build\src\confi
+g\configAsync.js
+- X:\Sell Now\apps\bu
+yer\node_modules\@exp
+o\cli\build\src\confi
+g\index.js
+- X:\Sell Now\apps\bu
+yer\node_modules\@exp
+o\cli\build\bin\cli
+- X:\Sell Now\apps\bu
+yer\node_modules\expo
+\bin\cli
+    at Function._reso
+lveFilename (node:int
+ernal/modules/cjs/loa
+der:1401:15)
+    at 
+defaultResolveImpl (n
+ode:internal/modules/
+cjs/loader:1057:19)
+    at resolveForCJSW
+ithHooks (node:intern
+al/modules/cjs/loader
+:1062:22)
+    at 
+Function._load (node:
+internal/modules/cjs/
+loader:1211:37)
+    at TracingChannel
+.traceSync (node:diag
+nostics_channel:322:1
+4)
+    at 
+wrapModuleLoad (node:
+internal/modules/cjs/
+loader:235:24)
+    at 
+Module.require (node:
+internal/modules/cjs/
+loader:1487:12)
+    at require (node:
+internal/modules/help
+ers:135:16)
+    at 
+Object.<anonymous> 
+(X:\Sell Now\apps\buy
+er\node_modules\ajv-k
+eywords\dist\definiti
+ons\typeof.js:3:19)
+    at 
+Module._compile (node
+:internal/modules/cjs
+/loader:1730:14)

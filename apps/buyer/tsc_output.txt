@@ -1,0 +1,12 @@
+﻿app/(tabs)/_layout.tsx(18,9): error TS2322: Type '(props: BottomTabBarButtonProps) => Element' is not assignable to type '(props: BottomTabBarButtonProps) => ReactNode'.
+  Types of parameters 'props' and 'props' are incompatible.
+    Type 'import("X:/Sell Now/apps/buyer/node_modules/expo-router/node_modules/@react-navigation/bottom-tabs/lib/typescript/src/types").BottomTabBarButtonProps' is not assignable to type 'import("X:/Sell Now/apps/buyer/node_modules/@react-navigation/bottom-tabs/lib/typescript/src/types").BottomTabBarButtonProps'.
+      Type 'BottomTabBarButtonProps' is not assignable to type 'Omit<TouchableWithoutFeedbackProps, "onPress">'.
+        Types of property 'delayLongPress' are incompatible.
+          Type 'number | null | undefined' is not assignable to type 'number | undefined'.
+            Type 'null' is not assignable to type 'number | undefined'.
+app/product/[id].tsx(568,5): error TS1117: An object literal cannot have multiple properties with the same name.
+components/hello-wave.tsx(11,11): error TS2322: Type '{ fontSize: number; lineHeight: number; marginTop: number; animationName: { '50%': { transform: { rotate: string; }[]; }; }; animationIterationCount: number; animationDuration: string; }' is not assignable to type 'StyleProp<AnimatedStyle<StyleProp<TextStyle>>>'.
+  Types of property 'animationName' are incompatible.
+    Object literal may only specify known properties, and ''50%'' does not exist in type 'any[] | SharedValueDisableContravariance<string> | SharedValueDisableContravariance<any[]> | any[]'.
+components/parallax-scroll-view.tsx(7,3): error TS2724: '"react-native-reanimated"' has no exported member named 'useScrollOffset'. Did you mean 'useScrollViewOffset'?
