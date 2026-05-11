@@ -45,9 +45,7 @@ export const getImageUrl = (path: string | undefined | null) => {
         return `https://demobackend.pasiware.cloud${relativePath}`;
     }
 
-    if (path.startsWith('http')) {
-        return path.replace('10.0.2.2', 'demobackend.pasiware.cloud');
-    }
+    if (path.startsWith('http')) return path;
 
     return `https://demobackend.pasiware.cloud${path.startsWith('/') ? '' : '/'}${path}`;
 };

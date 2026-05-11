@@ -29,11 +29,7 @@ api.interceptors.response.use(
 export const getImageUrl = (imagePath: string | undefined | null) => {
     if (!imagePath) return '';
 
-    // Fix for legacy data with localhost
-    if (imagePath.includes('localhost')) {
-        // This might need adjustment if users still have localhost links in DB
-        // Ideally replace origin with current API origin
-    }
+
 
     if (imagePath.startsWith('http')) return imagePath;
 
