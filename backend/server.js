@@ -27,7 +27,7 @@ const shiprocketRoutes = require('./routes/shiprocketRoutes');
 const settingsRoutes = require('./routes/settingsRoutes');
 
 const app = express();
-const PORT = process.env.PORT || 5500;
+const PORT = process.env.PORT || 6200;
 
 // Ensure necessary directories exist
 const uploadsDir = path.join(__dirname, 'uploads');
