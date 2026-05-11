@@ -31,7 +31,7 @@ api.interceptors.response.use(
     (response) => response,
     async (error) => {
         if (!error.response) {
-            console.error(`Network Error - Is backend running on Port 5500? URL: ${error.config?.baseURL || error.config?.url}`);
+            console.error(`Network Error - Is backend running on Port 6200 or Production? URL: ${error.config?.baseURL || error.config?.url}`);
             console.error('Error Details:', error.message);
         } else if (error.response.status === 401) {
             // Token expired or invalid - Log it but do NOT auto-logout
@@ -46,10 +46,9 @@ api.interceptors.response.use(
 export const getImageUrl = (imagePath: string | undefined | null) => {
     if (!imagePath) return null;
 
-    // Fix for legacy data with localhost
-    if (imagePath.includes('localhost')) {
-        return imagePath.replace('http://localhost:5500', BASE_URL).replace('http://10.0.2.2:5500', BASE_URL);
-    }
+    // Handle relative paths
+    const cleanPath = imagePath.replace(/\\/g, '/');
+    return `${BASE_URL}${cleanPath.startsWith('/') ? '' : '/'}${cleanPath}`;
 
     if (imagePath.startsWith('http')) return imagePath;
 

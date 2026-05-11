@@ -6,7 +6,7 @@ import api from '../../src/utils/api';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useAuthStore } from '../../src/store/authStore';
 
-const BASE_URL = 'http://192.168.1.5:5500';
+const BASE_URL = 'https://demobackend.pasiware.cloud';
 
 // Helper to format image URLs
 const getImageUrl = (path: string) => {

@@ -2,7 +2,7 @@ const http = require('http');
 
 const options = {
     hostname: 'localhost',
-    port: 5500,
+    port: 6200,
     path: '/api/products',
     method: 'GET'
 };

@@ -28,7 +28,7 @@ api.interceptors.response.use(
     response => response,
     error => {
         if (!error.response) {
-            console.error(`Network Error - Is backend running on Port 5500? URL: ${error.config?.baseURL || error.config?.url}`);
+            console.error(`Network Error - Is backend running on Port 6200 or Production? URL: ${error.config?.baseURL || error.config?.url}`);
             console.error('Error Details:', error.message);
         }
         return Promise.reject(error);
@@ -46,7 +46,7 @@ export const getImageUrl = (path: string | undefined | null) => {
     }
 
     if (path.startsWith('http')) {
-        return path.replace('10.0.2.2', 'demobackend.pasiware.cloud').replace('demo.ranx24.com', 'demobackend.pasiware.cloud');
+        return path.replace('10.0.2.2', 'demobackend.pasiware.cloud');
     }
 
     return `https://demobackend.pasiware.cloud${path.startsWith('/') ? '' : '/'}${path}`;

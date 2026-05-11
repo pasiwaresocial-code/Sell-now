@@ -12,7 +12,7 @@ export default function Products() {
     const getImageUrl = (path: string) => {
         if (!path) return '';
         if (path.startsWith('http')) return path;
-        return `http://192.168.1.5:5500/${path.startsWith('/') ? path.slice(1) : path}`;
+        return `https://demobackend.pasiware.cloud/${path.startsWith('/') ? path.slice(1) : path}`;
     };
 
     useEffect(() => {

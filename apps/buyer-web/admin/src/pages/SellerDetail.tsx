@@ -9,13 +9,7 @@ const BASE_URL = 'https://demobackend.pasiware.cloud';
 const getImageUrl = (path: string) => {
     if (!path) return 'https://via.placeholder.com/150';
 
-    // If it's already a full URL, replace any old IP addresses with localhost
-    if (path.startsWith('http')) {
-        // Replace any IP-based URLs with localhost
-        return path.replace(/http:\/\/\d+\.\d+\.\d+\.\d+:5500/, BASE_URL);
-    }
-
-    // For relative paths, prepend BASE_URL
+    if (path.startsWith('http')) return path;
     return `${BASE_URL}${path.startsWith('/') ? '' : '/'}${path}`;
 };
 
