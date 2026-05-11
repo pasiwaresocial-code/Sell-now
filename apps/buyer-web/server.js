@@ -12,12 +12,12 @@ const PORT = process.env.PORT || 3001;
 app.use(express.static(path.join(__dirname, 'dist')));
 
 // Handle Admin App routing
-app.get('/admin/:path*', (req, res) => {
+app.get(/^\/admin/, (req, res) => {
     res.sendFile(path.join(__dirname, 'dist', 'admin', 'index.html'));
 });
 
-// Handle Main App routing - send all requests to index.html
-app.get('/:path*', (req, res) => {
+// Handle Main App routing - catch all other routes
+app.get(/.*/, (req, res) => {
     res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
