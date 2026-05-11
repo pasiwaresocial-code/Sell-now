@@ -46,10 +46,6 @@ api.interceptors.response.use(
 export const getImageUrl = (imagePath: string | undefined | null) => {
     if (!imagePath) return null;
 
-    // Handle relative paths
-    const cleanPath = imagePath.replace(/\\/g, '/');
-    return `${BASE_URL}${cleanPath.startsWith('/') ? '' : '/'}${cleanPath}`;
-
     if (imagePath.startsWith('http')) return imagePath;
 
     // Handle relative paths
